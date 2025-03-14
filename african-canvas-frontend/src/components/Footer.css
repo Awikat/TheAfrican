@@ -1,0 +1,106 @@
+/* Footer Container */
+.footer {
+  background-color: var(--primary-color); /* Match navbar color */
+  color: var(--secondary-color); /* Use secondary color for text */
+  padding: 40px 20px;
+  border-top: 2px solid var(--secondary-color); /* Add a border line */
+}
+
+/* Footer Content */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+/* Quick Links Section */
+.quick-links h3,
+.contact-info h3,
+.social-media h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--secondary-color); /* Use secondary color */
+}
+
+.quick-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links ul li {
+  margin-bottom: 10px;
+}
+
+.quick-links ul li a {
+  color: var(--secondary-color); /* Use secondary color */
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.quick-links ul li a:hover {
+  color: var(--accent-color); /* Use accent color for hover */
+}
+
+/* Contact Info Section */
+.contact-info p {
+  margin: 5px 0;
+  font-size: 1.1rem;
+}
+
+/* Social Media Section */
+.social-media .social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-media .social-icons a {
+  color: var(--secondary-color); /* Use secondary color */
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-media .social-icons a:hover {
+  color: var(--accent-color); /* Use accent color for hover */
+}
+
+/* Copyright Section */
+.copyright {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: var(--secondary-color); /* Use secondary color */
+}
+
+.copyright a {
+  color: var(--accent-color); /* Use accent color */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.copyright a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .quick-links,
+  .contact-info,
+  .social-media {
+    margin-bottom: 20px;
+  }
+
+  .social-media .social-icons {
+    justify-content: center;
+  }
+}

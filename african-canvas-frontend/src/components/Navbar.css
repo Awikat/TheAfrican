@@ -1,0 +1,120 @@
+/* Navbar Container */
+.navbar {
+  background-color: var(--primary-color); /* Use primary color */
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Navbar Content */
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-image {
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.logo-text {
+  color: var(--secondary-color); /* Use secondary color */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: var(--secondary-color); /* Use secondary color */
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--accent-color); /* Use accent color for hover */
+}
+
+/* Logout Button */
+.logout-button {
+  background-color: var(--accent-color); /* Use accent color */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: var(--secondary-color); /* Use secondary color for hover */
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  color: var(--secondary-color); /* Use secondary color */
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: var(--primary-color); /* Use primary color */
+    width: 100%;
+    text-align: center;
+    gap: 0;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-link {
+    padding: 1rem;
+    border-bottom: 1px solid var(--secondary-color); /* Add a border line */
+  }
+
+  .logout-button {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .search-bar {
+    margin: 10px 0;
+    max-width: 100%;
+  }
+}
