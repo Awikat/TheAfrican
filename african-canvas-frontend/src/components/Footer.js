@@ -61,7 +61,7 @@ const Footer = () => {
             <a href="https://www.youtube.com/@theafrican_Canvas" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-youtube"></i>
             </a>
-            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.tiktok.com/@the_arfican.canvas?_t=ZM-8uj0irIkkwo&_r=1" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-tiktok"></i>
             </a>
           </div>
